@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/javascript.js"></script>
+
     <title>Grupo Vale</title>
 </head>
 <body>
@@ -37,10 +38,12 @@
             <ul>
                 <li><a class="active" href="">Início</a></li>
                 <li id="area"> Areas de Atuação <img src="images/icon/seta.png" width="10px" alt=""></li>
-                <div class="most">
-                    <li><a href=""> - Assessoria Jurídica</a></li>
-                    <li><a href=""> - Contabilidade Empresarial</a></li>
-                    <li><a href=""> - Psicologia Clínica</a></li>
+                <div class="flex">
+                    <div class="most">
+                        <li><a href=""> - Assessoria Jurídica</a></li>
+                        <li><a href=""> - Contabilidade Empresarial</a></li>
+                        <li><a href=""> - Psicologia Clínica</a></li>
+                    </div>
                 </div>
                 <li><a href="">Sobre nós</a></li>
                 <li><a href="">Contato</a></li>
@@ -50,9 +53,27 @@
 
 
 
+
+
+
+
     <section id="section_carrousel">
-        <img src="images/contabilidadeGC.jpg" alt="">
+        <!-- <img src="images/contabilidadeGC.jpg" alt=""> -->
+        <div id="items-wrapper">
+            <div id="items">
+                <div class="item"><img src="images/juridicoGC.jpg" alt=""></div>
+                <div class="item"><img src="images/contabilidadeGC.jpg" alt=""></div>
+                <div class="item"><img src="images/psicologiaGC2.jpg" alt=""></div>
+            </div>
+        </div>
+
     </section>
+
+
+
+
+
+
 
     <section id="section1">
         <div class="container">
@@ -207,7 +228,9 @@
     </footer>
     
     <div id="direitos">
-        <p>©2021 Todos os direitos reservados.</p>
+        <div class="container">
+            <p>©2021 Todos os direitos reservados.</p>
+        </div>
     </div>
     
 </body>

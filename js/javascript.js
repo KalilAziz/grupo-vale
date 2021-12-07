@@ -1,9 +1,11 @@
 window.onload = function(){
+    document.querySelector("#menu1 ul").style.display = 'none'
     document.querySelector(".menuMobile").addEventListener("click", function(){
-        if(document.querySelector("#menu1 ul").style.display == 'block'){
-            document.querySelector("#menu1 ul").style.display = 'none'
-        } else{
+        
+        if(document.querySelector("#menu1 ul").style.display == 'none'){
             document.querySelector("#menu1 ul").style.display = 'block'
+        } else if(document.querySelector("#menu1 ul").style.display = 'block'){
+            document.querySelector("#menu1 ul").style.display = 'none'
         }
     })
 
@@ -20,6 +22,28 @@ window.onload = function(){
             document.querySelector("#area").style.color = 'white'
             document.querySelector("#area").style.fontSize = '1rem'
         }
+    })
+    document.querySelector("#items")
+    .addEventListener("wheel", event =>{
+         if(event.deltaY < 0){
+             event.target.scrollBy(-300, 0)
+         }else{
+            event.target.scrollBy(300, 0)
+         }
+    })
+
+    document.querySelector("#up").addEventListener("click", function(){
+        
+         document.querySelector("#items").addEventListener("wheel", event =>{
+         if(event.deltaY < 0){
+             event.target.scrollBy(300, 0)
+         }else{
+            event.target.scrollBy(-300, 0)
+         }
+    }) 
+    
+
+
     })
 
 

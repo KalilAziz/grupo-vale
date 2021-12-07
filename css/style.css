@@ -63,6 +63,7 @@ header .container #menu li ul{
     left:76px;
     display:none;
     
+    
 }
 
 header .container #menu li ul li{
@@ -117,7 +118,7 @@ header .container #menu a:hover{
 header #menu1 ul{
     text-align: center;
     position: absolute;
-    left: 0;
+    left: 0px;
     width: 100%;
     background-color: #232728;
     list-style: none;
@@ -128,6 +129,23 @@ header  #menu1 li{
     padding: 10px;
     display: none;
     margin-right: 50px;
+
+}
+header  #menu1 .flex{
+    display: flex;
+    justify-content: center;
+
+}
+header  #menu1 .flex .most a{
+    margin: auto;
+    width: 60%;
+    text-align: center;
+
+}
+
+
+header  #menu1 .most li{
+    padding: 10px;
 
 }
 
@@ -155,14 +173,29 @@ header  #menu1 a{
 
 
 /*****************************  Carroussel - Início  **********************************************/
-#section_carrousel img{
+#section_carrousel #items-wrapper{
     width: 100%;
-    height: 500px;
-    object-fit: cover;
-    position: relative;
-    top: -50px;
-    z-index: 2;
 }
+#section_carrousel #items-wrapper #items{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+#section_carrousel #items-wrapper #items .item{
+    flex: none;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
+
+#section_carrousel #items-wrapper #items img{
+    width: 100vw;
+    object-fit: cover;
+    max-height: 700px;
+}
+
+
 
 /*****************************  Carroussel - fim  **********************************************/
 
@@ -173,7 +206,7 @@ header  #menu1 a{
 
 #section1 .container #grupo_vale,
 #section1 .container #noticia{
-    margin: 30px 0;
+    margin: 0 0 20px 0;
     display: flex;
     flex-wrap: wrap;
     
@@ -235,14 +268,18 @@ header  #menu1 a{
 
 
 /*****************************  Section - Serviços - Início  *********************************/
-
+#section2{
+        margin-top: 50px;
+}
 
 #section2 .container h1{
     text-align: center;
 }
 #section2 .container #servicos{
+    
     display: flex;
     flex-wrap: wrap;
+    justify-content: center
 }
 
 
@@ -501,6 +538,76 @@ footer .container .div_footer_rede .insta:hover{
         padding: 10px;
         display: block;
     }
+
+    header  #menu1{
+        padding: 10px;
+        /* display: none; */
+    }
+
+    #section1 .container .texto{
+        font-size: 1rem;
+    }
+
+    #section2{
+        margin-top: 0px;
+}
+
+    #section2 .container #servicos .campo h2{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+footer .container .div_footer,
+footer .container .div_footer_rede{
+
+    border-right: none;
+
+}
+
+footer .container .borda{
+    border-right: none;
+    
+}
+
+
+}
+
+@media screen and (max-width: 420px){
+    #section1 .container .texto{
+        font-size: .8rem;
+    }
+
+    #section1 .container .texto button{
+        margin: auto;
+        display: block;
+    }
+
+    #section2 .container #servicos .campo p{
+        font-size: 0.8rem;
+    }
+    
+
+    #section3 .container p{
+        font-size: 0.8rem;
+    }
+
+    #section4 .container .selo p{
+        font-size: 0.8rem;
+    }
+
+    footer .container .div_footer p{
+        font-size: 0.8rem;
+    }
+
+    footer .div_footer_rede a {
+        font-size: 0.8rem;
+    }
+
+    #direitos p{
+        font-size: 0.6rem;
+    
+    }
+        
 }
 
 
