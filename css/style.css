@@ -59,26 +59,20 @@ header .container #menu li{
 
 header .container #menu li ul{
     position:absolute;
-    top:42px;
+    top:50px;
     left:76px;
     display:none;
-    
-    
 }
 
 header .container #menu li ul li{
     background-color: #232728;
     padding: 5px;
-    
 }
 
-header .container #menu li:hover ul,
- header .container #menu li.over ul{
+header .container #menu li:hover ul{
      display:block;
      
-     
 }
-
 
 
 header .container #menu a{
@@ -261,82 +255,485 @@ header  #menu1 a{
 /*****************************  Section - Nóticia e Sobre - Fim  *****************************/
 
 
+/*****************************  Section - Serviços - Início  ********************************
 
-
-
-
-
-
-/*****************************  Section - Serviços - Início  *********************************/
 #section2{
-        margin-top: 50px;
+    padding: 20px;
+    background-color: #ededed;
 }
 
-#section2 .container h1{
+#section2 .container .titulo h2{
     text-align: center;
 }
-#section2 .container #servicos{
-    
+
+#section2 .container .planos{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center
+    justify-content: space-around;
+    padding: 20px;
 }
 
-
-
-#section2 .container #servicos .campo{
+#section2 .container .planos .plano{
     flex: 1;
-    min-width: 350px;
-    margin: 20px;
-    padding: 10px;
-}
-
-#section2 .container #servicos .campo h2{
+    max-width: 300px;
+    border: 1px solid #CCC;
     text-align: center;
-}
-
-#section2 .container #servicos .campo .img{
-    text-align: center;
-}
-
-#section2 .container #servicos .campo .img img{
-    text-align: center;
-    width: 100%;
-}
-#section2 .container #servicos .campo:hover{
-    transition: .5s;
-    box-shadow:0px 2px 13px 2px rgba(50, 50, 50, 0.4);
-
-}
-
-#section2 .container #servicos .campo p{
-    text-align: justify;
-}
-
-
-#section2 .container  button{
-    display: block;
-    margin: auto;
-    padding: 10px 40px;
+    padding: 20px;
     background-color: white;
-    border-radius: 5px;
 }
 
-#section2 .container button:hover{
-
-    color: white;
-    background-color: #232728;
-    box-shadow:  0px 2px 13px 2px rgba(50, 50, 50, 0.4);
+#section2 .container .planos .plano:hover{
     transition: 1s;
+    box-shadow:  0px 2px 13px 2px rgba(50, 50, 50, 0.4);
 }
 
-/*****************************  Section - Serviços - Fim  ***********************************/
+#section2 .container .planos .plano .titulos{
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#section2 .container .planos .plano .Valor{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+#section2 .container .planos .plano .Valor span{
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    color: rgb(87, 87, 87);
+    margin-bottom: 20px;
+}
+#section2 .container .planos .plano p{
+    margin: 7px;
+}
+#section2 .container .planos .plano .traco{
+    border: 1px solid gray;
+    width: 10px;
+    margin: auto;
+}
+
+#section2 .container .planos .plano .button{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(87, 87, 87);
+    color: white;
+    margin-top: 10px;
+}
+
+#section2 .container .planos .plano .button:hover{
+    transition: 1s;
+    background-color: white;
+    color: black;
+    box-shadow:  0px 2px 13px 2px rgba(50, 50, 50, 0.4);
+}
+
+
+
+
+
+***************************  Section - Serviços - Fim  ***********************************/
+
+/************************  Section - Serviço principal - Início  ****************************
+
+#section2-Planos{
+    border: 1px solid red;
+    padding: 20px;
+    margin-bottom: 100px;
+}
+
+#section2-Planos .container .titulo h2{
+    text-align: center;
+}
+
+#section2-Planos .container .plano{
+    border: 1px solid red;
+    display: flex;
+}
+
+#section2-Planos .container .plano .image{
+    border: 1px solid blue;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#section2-Planos .container .plano .conteudo{
+    border: 1px solid yellow;
+    flex: 1;
+}
+
+***************************  Section - Serviço principal - Fim  *****************************/
+
+
+.default{
+    padding: 50px 0;
+
+}
+
+.default .section-title,
+.default .section-desc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title{
+    font-size: 20px;
+}
+
+.default .section-desc{
+    font-size: 12px;
+    color: #ccc;
+    margin: 13px 0 40px 0;
+}
+
+.default .section-body{
+    margin: auto;
+    max-width: 1140px;
+}
+
+.default.ligth{
+    background-color: white;
+}
+
+.default.light .section-title,
+.default.light .section-body{
+    color: #000;
+}
+
+.default.dark{
+    background-color: black;
+}
+
+.default.dark .section-title,
+.default.dark .section-body{
+    color: white;
+}
+
+.button{
+    display: inline-block;
+    background-color: #b28756;
+    padding: 10px 40px;
+    font-size: 11px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+}
 
 
 
 
 
 
+.bg-team{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.section-team-area{
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 50px 0;
+}
+
+.section-team{
+    overflow: hidden;
+    width: 880px;
+    margin: auto;
+}
+
+.section-team .sliders{
+    width: 1000vw;
+    height: 100%;
+
+}
+
+.section-team .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: white;
+    margin-right: 20px;
+}
+.section-team .slidearea{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    padding: 30px;
+}
+
+.section-team-area .slider-pointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-team-area .pointer{
+    width: 13px;
+    height: 13px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin:  0 5px;
+    cursor: pointer
+}
+
+.section-team-area  .active,
+.section-team-area  .pointer:hover{
+    background-color: #b28756;
+
+}
+
+.section-team--avatar{
+    width: 150px;
+    height: auto;
+}
+
+.section-team--name{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 17px;
+    margin-top: 30px;
+}
+
+.section-team--role{
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+
+.section-team--social{
+    display: flex;
+    margin-top: 20px;
+}
+.section-team--social a{
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+
+.section-team--social a:hover{
+    background-color: #b28756;
+}
+
+
+
+
+
+
+
+.section-slide-happy{
+    max-width: 800px;
+    margin: auto;
+}
+
+.section-happy--clients{
+    text-align: center;
+}
+
+.section-happy--clients-name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+
+.section-happy--clients--role{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.section-happy--clients .quote{
+    width: 20px;
+    margin: 25px 0;
+}
+
+
+.section-slide-happy .slider-pointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-slide-happy .pointer{
+    width: 13px;
+    height: 13px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin:  0 5px;
+    cursor: pointer
+}
+
+.section-slide-happy  .active,
+.section-slide-happy  .pointer:hover{
+    background-color: #b28756;
+
+}
+.marcas{
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.section-marcas{
+    max-width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    
+}
+
+
+.section-price{
+    display: flex;
+    justify-content: space-around;
+}
+
+.section-price .planos{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 50px;
+    border: 1px solid #7e7e7e;
+    border-radius: 10px;
+}
+
+.section-price .planos:hover{
+    transition: 1s;
+    box-shadow:  0px 2px 13px 2px rgba(50, 50, 50, 0.4);
+}
+
+
+.section-price .planos .title{
+    font-size: 8px;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.section-price .planos .title h2{
+    text-align: center;
+    font-weight: 600;
+}
+
+.section-price .planos .preco{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.section-price .planos .periodo{
+    margin-bottom: 15px;
+    color: #999;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+.section-price .planos .conteudo{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.section-price .planos .traco{
+    width: 10px;
+    border-top: 1px solid #7e7e7e;
+    margin: 8px 0;
+}
+
+.button-plano{
+    background-color: #000;
+    padding: 15px 40px;
+}
+
+.button-plano a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+
+.button-plano:hover{
+    background-color: #b28756;
+}
+
+
+
+.section--premium{
+    display: flex;
+    padding: 0px 60px;
+    margin-bottom: 30px;
+}
+
+.section-book img{
+    width: 360px;
+    height: 360px;
+}
+
+.section-book-conteudo{
+    flex: 1;
+}
+
+.section-book-conteudo-texto{
+    display: flex;
+    padding: 20px;
+}
+
+.section-book-conteudo img{
+    width: 40px;
+    height: 40px;
+    margin-right: 30px;
+}
+
+.section-book--title h2{
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    
+}
+
+.section-book--title p{
+    line-height: 25px;
+    color: #000;
+}
+
+.section-book--title .feature p{
+    font-weight: none ;
+    color: #999;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.button-book{
+    display: flex;
+    justify-content: center;
+}
 
 /*****************************  Section - Missão - início  ***********************************/
 
@@ -345,7 +742,6 @@ header  #menu1 a{
     background-image: url(../images/cidade5.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     height: 350px;
     box-shadow:  0px 2px 13px 2px rgba(50, 50, 50, 0.4);
 }
@@ -609,6 +1005,7 @@ footer .container .borda{
     }
         
 }
+
 
 
 
