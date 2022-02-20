@@ -1,0 +1,17 @@
+#sobrenos{
+
+}
+
+#sobrenos .container{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+#sobrenos .container .sobre{
+  flex: 1;
+  min-width: 300px;
+  padding: 10px;
+  font-size: 18px;
+}
+
